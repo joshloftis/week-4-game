@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game of Crystals | Luck or Skill?</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/Crystals/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div>
+    <h1>A Game of Crystal</h1>
+  </div>
+  <div>
+    <p>You will be give a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crysal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to the random number, and you lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it. But, to make the game more fun, you'll have the remember the value after clicking it.</p>
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </div>
+  <div id="random-number">
+    <!--This is the div the randomly generated number will be placed in-->
+  </div>
+  <div id="info-div">
+    <!--This is the div that will hold the user's wins and losses-->
+  </div>
+  <div>
+    <img id="crystalOne" class="crystal" src="assets/images/Crystals/blue-crystal.png" alt="Blue crystal" width="75">
+    <img id="crystalTwo" class="crystal" src="assets/images/Crystals/red-crystal.png" alt="Red crystal" width="75">
+    <img id="crystalThree" class="crystal" src="assets/images/Crystals/green-crystal.png" alt="Green crystal" width="75">
+    <img id="crystalFour" class="crystal" src="assets/images/Crystals/orange-crystal.png" alt="Orange crystal" width="75">
+  </div>
+  <div id="user-score">
+    <!--This is the div that will hold the user's calculated score-->
+  </div>
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>
