@@ -14,7 +14,8 @@ $(document).ready(function(){
   randomNumber = Math.floor(Math.random() * (120-19+1)) + 19;
   $('#random-number').html(randomNumber);
   //Initalize wins and losses on screen
-  $('#info-div').html('<p id="alert-box">' + '</p>' + '<p id="wins">' + wins + '</p>' + '<p id="losses">' + losses + '</p>');
+  $('#wins').html(wins);
+  $('#losses').html(wins);
   $('#user-score').html(score);
   //generates a random number for each crystal with which the user can interact
   for (var i = 0; i < 4; i++) {
@@ -25,12 +26,12 @@ $(document).ready(function(){
   function evaluateGame() {
     if (score === randomNumber) {
       wins++;
-      $('#alert-box').html("You win!");
+      $('#game-alert').html("You won!").addClass('green').removeClass('red');
       $('#wins').html(wins);
       resetGame();
     } else if (score > randomNumber) {
       losses++;
-      $('#alert-box').html("You lose!");
+      $('#game-alert').html("You lost!").addClass('red').removeClass('green');
       $('#losses').html(losses);
       resetGame();
     }
